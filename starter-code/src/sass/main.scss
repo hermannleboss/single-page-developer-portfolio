@@ -21,12 +21,6 @@ body{
   background-color: $black;
 }
 
-.container{
-  border: solid 1px red;
-  width: 1110px;
-  margin: auto;
-}
-
 .nav{
   display: flex;
   justify-content: space-between ;
@@ -87,20 +81,3 @@ body{
   }
 }
 
-.portfolio{
-  display: flex;
-  flex-wrap: wrap;
-  & > div{
-    width: 50%;
-    flex: auto;
-  }
-  &-header{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .text-m{
-    margin-top: 20px;
-    margin-bottom: 7px;
-  }
-}

@@ -36,4 +36,16 @@
     font-size: 18px;
     line-height: 28px;
   }
+  &-light{
+    color: $light;
+  }
+  &-green{
+    color: $green;
+  }
+  &-gray{
+    color: $gray;
+  }
+  &-black{
+    color: $black;
+  }
 }
