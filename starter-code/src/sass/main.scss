@@ -1,0 +1,106 @@
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/extensions";
+
+@import "base/base";
+@import "base/display";
+@import "base/typography";
+
+
+@import "layout/container";
+
+@import "pages/home";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: $black;
+}
+
+.container{
+  border: solid 1px red;
+  width: 1110px;
+  margin: auto;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between ;
+  img{
+    width: 24px;
+  }
+  &-brand{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.444444px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  &-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+  }
+}
+
+.hero{
+  display: flex;
+  &-content{
+    width: 60%;
+    &-title{
+      margin-top: 90px;
+      margin-bottom: 43px;
+    }
+    p{
+      width: 445px;
+      margin-bottom: 66px;
+    }
+  }
+  &-img{
+    width:40%;
+  }
+}
+
+.hero img{
+  width: 120%;
+}
+
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  & > div{
+    flex: auto;
+    width: 33%;
+  }
+  .text-l {
+    margin-bottom: 14px;
+  }
+  p{
+    margin-bottom: 58px;
+  }
+}
+
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  & > div{
+    width: 50%;
+    flex: auto;
+  }
+  &-header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-m{
+    margin-top: 20px;
+    margin-bottom: 7px;
+  }
+}

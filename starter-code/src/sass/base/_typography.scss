@@ -1,0 +1,39 @@
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf');
+}
+
+*{
+  font-family: 'Space Grotesk', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: $white;
+}
+
+.text{
+  &-xl{
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+  }
+  &-l{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+  }
+  &-m{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &-sm{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

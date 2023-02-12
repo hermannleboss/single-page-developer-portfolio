@@ -1,90 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single-page developer portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 <body>
+<div class="container nav">
+    <div class="nav-brand">adamkeyes</div>
+    <div class="nav-icons">
+        <img src="assets/images/icon-github.svg" alt="icone github">
+        <img src="assets/images/icon-frontend-mentor.svg" alt="Logo FM">
+        <img src="assets/images/icon-linkedin.svg" alt="Icone Linkedin">
+        <img src="assets/images/icon-twitter.svg" alt="Icone twitter">
+    </div>
+</div>
+<div class="container hero">
+    <div class="hero-content">
+        <h1 class="text text-xl hero-content-title">Nice to meet you! I'm Adam Keyes.</h1>
+        <p>
+            Based in the UK, I'm a front-end developer passionate about
+            building accessible web apps that users love.
+        </p>
+        <a>Contact me</a>
+    </div>
+    <div class="hero-img">
+        <img src="assets/images/image-profile-desktop.webp" alt="">
+    </div>
+</div>
+<div class="container skills">
+    <div>
+        <div class="text-l">HTML</div>
+        <p>4 Years Experience</p>
+    </div>
+    <div>
+        <div class="text-l">CSS</div>
+        <p>4 Years Experience</p>
+    </div>
+    <div>
+        <div class="text-l"> JavaScript</div>
+        <p>4 Years Experience</p>
+    </div>
+    <div>
+        <div class="text-l">Accessibility</div>
+        <p>4 Years Experience</p>
+    </div>
+    <div>
+        <div class="text-l">React</div>
+        <p>3 Years Experience</p>
+    </div>
+    <div>
+        <div class="text-l">Sass</div>
+        <p>3 Years Experience</p>
+    </div>
+</div>
 
-  adamkeyes
+<div class="container portfolio-header">
+    <h2 class="text text-m">Projects</h2>
+    <a> Contact me</a>
+</div>
 
-  Nice to meet you! I'm Adam Keyes.
+<div class="container portfolio">
+    <div>
+        <p class="text-m"> Design portfolio</p>
+        <p class="text-sm">HTML CSS</p>
+        View project
+        View code
+    </div>
+    <div>
+        <p class="text-m"> E-learning landing page</p>
+        <p class="text-sm">HTML CSS</p>
+        View project
+        View code
+    </div>
+    <div>
+        <p class="text-m">Todo web app<p/>
+        <p class="text-sm">HTML CSS JavaScript</p>
+        View project
+        View code
+    </div>
+    <div>
+        <p class="text-m"> Entertainment web app<p/>
+        <p class="text-sm">HTML CSS JavaScript</p>
+        View project
+        View code
+    </div>
+    <div>
+        <p class="text-m">Memory Game<p/>
+        <p class="text-sm">HTML CSS JavaScript</p>
+        View project
+        View code
+    </div>
+    <div>
+        <p class="text-m">Art gallery showcase<p/>
+        <p class="text-sm">HTML CSS JavaScript</p>
+        View project
+        View code
+    </div>
+</div>
 
-  Based in the UK, I'm a front-end developer passionate about 
-  building accessible web apps that users love.
+<div>
+    <div>
+        <h2 class="text text-m">Contact</h2>
+        <p>I would love to hear about your project and how I could help. Please
+            fill in the form, and I’ll get back to you as soon as possible.</p>
+    </div>
+    <div>
+        <form action="">
+            <div>
+                <label for="name">Name</label>
+                <input name="name" id="name" type="text">
+            </div>
 
-  Contact me
+            <div>
+                <label for="email">Email</label>
+                <input name="name" id="email" type="text">
+            </div>
 
-  HTML
-  4 Years Experience
+            <div>
+                <label for="message">Message</label>
+                <input name="message" id="message" type="text">
+            </div>
+            <a>Send message</a>
+        </form>
+    </div>
+</div>
 
-  CSS
-  4 Years Experience
+<div>
+    adamkeyes
+</div>
 
-  JavaScript
-  4 Years Experience
-
-  Accessibility
-  4 Years Experience
-
-  React
-  3 Years Experience
-
-  Sass
-  3 Years Experience
-
-  Projects
-
-  Contact me
-
-  Design portfolio
-  HTML CSS
-  View project
-  View code
-
-  E-learning landing page
-  HTML CSS
-  View project
-  View code
-
-  Todo web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Entertainment web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Memory Game
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Art gallery showcase
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Contact
-
-  I would love to hear about your project and how I could help. Please 
-  fill in the form, and I’ll get back to you as soon as possible.
-
-  Name
-  Email
-  Message
-
-  Send message
-
-  adamkeyes
-
-  <div id="app"></div>
-  <script type="module" src="/src/main.ts"></script>
+<div id="app"></div>
+<script type="module" src="/src/main.ts"></script>
 </body>
 </html>
