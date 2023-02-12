@@ -11,6 +11,7 @@
 .portfolio{
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 139px;
   gap: 30px;
   p{
     text-transform: uppercase;
@@ -63,5 +64,24 @@
   .text-m{
     margin-top: 20px;
     margin-bottom: 7px;
+  }
+}
+
+.footer{
+  background-color: $gray;
+  background-image: url("assets/images/pattern-rings.svg");
+  background-repeat: no-repeat;
+  padding-top: 84px;
+
+  &-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &-text{
+      max-width: 450px;
+    }
+    &-form{
+
+    }
   }
 }
