@@ -5,7 +5,6 @@ input{
   border: none;
   outline: none;
   border-bottom: solid 1px $white;
-  width: 100%;
   &:focus-visible{
     border-bottom:  solid 1px $green;
   }

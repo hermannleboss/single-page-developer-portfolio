@@ -82,18 +82,26 @@
   background-repeat: no-repeat;
   padding-top: 84px;
 
+  &-ending {
+    padding-top: 47px;
+    padding-bottom: 92px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   &-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: white solid 1px;
 
     &-text {
       max-width: 450px;
     }
 
     &-form {
+      padding-bottom: 92px;
       min-width: 350px;
-        padding-bottom: 92px;
       & > form > div {
         display: flex;
         flex-direction: column;
