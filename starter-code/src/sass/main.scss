@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   z-index: 5;
-  border: solid red 1px;
+  //border: solid red 1px;
 }
 
 .underline{
@@ -113,7 +113,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  padding-top: 72px;
+  padding-top: 40px;
+  row-gap: 24px;
+  @media (min-width: 768px) {
+    padding-top: 72px;
+    row-gap: 52px;
+  }
+  @media (min-width: 1280px) {
+    row-gap: 58px;
+  }
   img{
     position: absolute;
     right: -35%;
@@ -122,15 +130,15 @@ body {
 
   & > div {
     flex: auto;
-    width: 33%;
-  }
-
-  .text-l {
-    margin-bottom: 14px;
-  }
-
-  p {
-    margin-bottom: 58px;
+    width: 100%;
+    text-align: center;
+    @media (min-width: 768px) {
+      width: 45%;
+      text-align: left;
+    }
+    @media (min-width: 1280px) {
+      width: 33%;
+    }
   }
 }
 
