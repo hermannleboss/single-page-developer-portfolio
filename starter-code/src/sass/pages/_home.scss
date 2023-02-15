@@ -78,9 +78,6 @@
 
 .footer {
   background-color: $gray;
-  background-image: url("assets/images/pattern-rings.svg");
-  background-position: -25% 75%;
-  background-repeat: no-repeat;
   padding-top: 84px;
 
   &-ending {
@@ -98,6 +95,12 @@
 
     &-text {
       max-width: 450px;
+      position: relative;
+      img{
+        position: absolute;
+        bottom: 10%;
+        right: 60%;
+      }
     }
 
     &-form {

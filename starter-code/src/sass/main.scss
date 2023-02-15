@@ -15,7 +15,6 @@
   margin: 0;
   padding: 0;
   z-index: 5;
-  border: solid red 1px;
 }
 
 body {
@@ -101,6 +100,12 @@ body {
 .skills {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  img{
+    position: absolute;
+    right: -35%;
+    bottom: 0;
+  }
 
   & > div {
     flex: auto;
