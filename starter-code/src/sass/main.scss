@@ -17,6 +17,17 @@
   z-index: 5;
 }
 
+.underline{
+  text-decoration: underline;
+  text-decoration-color: $green
+}
+
+.border{
+  &-t{
+    border-top: 1px solid $light;
+  }
+}
+
 body {
   background-color: $black;
 }
@@ -101,6 +112,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  padding-top: 72px;
   img{
     position: absolute;
     right: -35%;
