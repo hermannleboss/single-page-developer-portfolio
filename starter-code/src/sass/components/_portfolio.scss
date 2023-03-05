@@ -7,6 +7,9 @@
     flex-wrap: wrap;
     padding-bottom: 139px;
     gap: 40px;
+    @media (min-width: 600px) {
+      justify-content: space-between;
+    }
   }
 
   &-header {
