@@ -72,3 +72,17 @@
     color: $black;
   }
 }
+
+.text{
+  &-center{
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    &-md{
+      &-left{
+        text-align: left;
+      }
+    }
+  }
+}
+
