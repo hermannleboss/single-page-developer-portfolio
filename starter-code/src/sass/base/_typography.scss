@@ -6,25 +6,48 @@
 
 *{
   font-family: 'Space Grotesk', serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
   color: $white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+
+  @media (min-width: 768px) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 .text{
   &-xl{
     font-weight: 700;
-    font-size: 88px;
-    line-height: 88px;
-    letter-spacing: -2.5px;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.13636px;
+
+    @media (min-width: 768px) {
+      font-size: 72px;
+      line-height: 72px;
+      letter-spacing: -2.04545px;
+    }
+    @media (min-width: 1280px) {
+      font-size: 88px;
+      line-height: 88px;
+      letter-spacing: -2.5px;
+    }
   }
   &-l{
     font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: -1.5px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -1.5px;
+    }
   }
   &-m{
     font-weight: 700;
@@ -49,3 +72,17 @@
     color: $black;
   }
 }
+
+.text{
+  &-center{
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    &-md{
+      &-left{
+        text-align: left;
+      }
+    }
+  }
+}
+

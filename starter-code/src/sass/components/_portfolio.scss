@@ -1,0 +1,82 @@
+*{
+  //border: solid 1px red;
+}
+.portfolio {
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 139px;
+    gap: 40px;
+    @media (min-width: 600px) {
+      justify-content: space-between;
+    }
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    @media (min-width: 768px) {
+      margin-bottom: 80px;
+      margin-top: 82px;
+    }
+  }
+
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (min-width: 600px) {
+      width: 45%;
+    }
+
+    &-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 30px;
+    }
+
+    &-image {
+      width: 100%;
+      height: auto;
+
+      @media (min-width: 1280px) {
+        &-container {
+          & + div {
+            display: none;
+          }
+
+          &:hover + div {
+            display: flex;
+          }
+        }
+      }
+
+      &-links {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+/*
+  p {
+    text-transform: uppercase;
+  }
+
+  & > div {
+    flex: auto;
+    @media (min-width: 768px) {
+      width: 45%;
+    }
+  }
+
+  .text-m {
+    margin-top: 20px;
+    margin-bottom: 7px;
+  }*/
+}
