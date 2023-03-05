@@ -1,27 +1,24 @@
-
+*{
+  //border: solid 1px red;
+}
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 139px;
-  gap: 40px;
-
-  p {
-    text-transform: uppercase;
-  }
-
-  & > div {
-    flex: auto;
-    @media (min-width: 768px) {
-      width: 45%;
-    }
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 139px;
+    gap: 40px;
   }
 
   &-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 80px;
-    margin-top: 82px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    @media (min-width: 768px) {
+      margin-bottom: 80px;
+      margin-top: 82px;
+    }
   }
 
 
@@ -30,15 +27,20 @@
     flex-direction: column;
     position: relative;
 
-    :nth-child(2) {
-      order: 4;
+    @media (min-width: 600px) {
+      width: 45%;
+    }
+    @media (min-width: 1280px) {
+      width: 50%;
+      //:nth-child(2) {
+      //  order: 2;
+      //}
     }
 
-    @media (min-width: 1280px) {
-      :nth-child(2) {
-        order: 2;
-      }
-    }
+    //
+    //:nth-child(2) {
+    //  order: 4;
+    //}
 
     &-links {
       margin-top: 20px;
@@ -75,9 +77,20 @@
       }
     }
   }
+/*
+  p {
+    text-transform: uppercase;
+  }
+
+  & > div {
+    flex: auto;
+    @media (min-width: 768px) {
+      width: 45%;
+    }
+  }
 
   .text-m {
     margin-top: 20px;
     margin-bottom: 7px;
-  }
+  }*/
 }
