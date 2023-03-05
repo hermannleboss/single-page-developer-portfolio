@@ -12,10 +12,16 @@
   @media (min-width: 1280px) {
     row-gap: 58px;
   }
-  img{
-    position: absolute;
-    right: -35%;
+
+  img {
+    position: relative;
     bottom: 0;
+    right: -35%;
+    @media (min-width: 768px) {
+      position: absolute;
+      right: -35%;
+      bottom: 0;
+    }
   }
 
   & > div {
