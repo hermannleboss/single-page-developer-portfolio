@@ -3,7 +3,6 @@
 @import "utils/mixins";
 @import "utils/extensions";
 
-
 @import "base/base";
 @import "base/display";
 @import "base/typography";
@@ -24,13 +23,13 @@
   //border: solid red 1px;
 }
 
-.underline{
+.underline {
   text-decoration: underline;
   text-decoration-color: $green
 }
 
-.border{
-  &-t{
+.border {
+  &-t {
     border-top: 1px solid $light;
   }
 }
@@ -41,10 +40,15 @@ body {
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
 
   img {
-    width: 24px;
+    width: 25px;
   }
 
   &-brand {
@@ -53,16 +57,18 @@ body {
     font-size: 32px;
     line-height: 32px;
     letter-spacing: -0.444444px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   &-icons {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 20%;
-    padding-right: 30px;
+    gap: 25.6px;
+    @media (min-width: 600px) {
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 30px;
+    }
   }
 }
 
