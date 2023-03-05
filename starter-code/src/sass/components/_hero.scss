@@ -5,10 +5,14 @@
   &-img {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 50px;
     z-index: 1;
-    width: 40%;
+    width: calc(100% - 100px);
 
+    @media (min-width: 600px) {
+      right: -30px;
+      width: 40%;
+    }
     img {
       width: 100%;
     }
