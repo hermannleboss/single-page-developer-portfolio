@@ -4,8 +4,11 @@
 
 .footer {
   background-color: $gray;
-  padding-top: 84px;
+  padding-top: 60px;
 
+  @media (min-width: 768px) {
+    padding-top: 84px;
+  }
   &-ending {
     padding-top: 47px;
     padding-bottom: 92px;

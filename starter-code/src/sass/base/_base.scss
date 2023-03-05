@@ -12,3 +12,17 @@ input{
     border-bottom:  solid 1px #FF6F5B;
   }
 }
+textarea{
+  background-color: $gray;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  border: none;
+  outline: none;
+  border-bottom: solid 1px $white;
+  &:focus-visible{
+    border-bottom:  solid 1px $green;
+  }
+  &:invalid {
+    border-bottom:  solid 1px #FF6F5B;
+  }
+}
